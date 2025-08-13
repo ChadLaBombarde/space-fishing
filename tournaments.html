@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+      <header>
+        <h1>Lunker Pros Space Fishing Co.</h1>
+        <p>Reel in the Stars: Intergalactic Fishing Adventures</p>
+        <p>Mick Knack and Cole Slaw's<br>Charters and Tournaments</p>
+        <h3>LIVE BAIT</h3>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tournaments.html" class="active">Tournaments</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="articles.html">Articles</a>
+    </nav>
+
+<section id="tournaments">
+        <h2>Fishing Tournaments</h2>
+        <div class="tournament-card" onclick="showDetails('tournament1')">
+            <h3>Galactic Duck Pond Challenge</h3>
+            <p>Date: July 25, 2025</p>
+        </div>
+        <div id="tournament1" style="display: none;">
+            <p>Details: Capt. Mick Knack Wins Inaugural Space Tournament!</p>
+        </div>
+        <div class="tournament-card" onclick="showDetails('tournament2')">
+            <h3>Notlincin N42 Space Fisherman's Catch and Cook</h3>
+            <p>Date: October 20, 2025</p>
+        </div>
+        <div id="tournament2" style="display: none;">
+            <p>Details: Fish in the calmish seas of Notlincin N42 for a Trophey and a 5,000 nanite payout!.</p><br>
+            <p>Sign-up today</p>
+        </div>
+        <div class="tournament-card" onclick="showDetails('tournament2')">
+            <h3>TBA</h3>
+            <p>Date: Novenmber 15, 2025</p>
+        </div>
+        <div id="tournament2" style="display: none;">
+            <p>Details: TBA</p><br>
+            <p>Sign-up today</p>
+        </div>
+    </section>
+    <!-- Bubbles background -->
+      <div class="bubbles"></div>
+      <footer>
+          <p>keytechcorps&copy</p>
+      </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

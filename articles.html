@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+      <header>
+        <h1>Lunker Pros Space Fishing Co.</h1>
+        <p>Reel in the Stars: Intergalactic Fishing Adventures</p>
+        <p>Mick Knack and Cole Slaw's<br>Charters and Tournaments</p>
+        <h3>LIVE BAIT</h3>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tournaments.html">Tournaments</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="articles.html" class="active" >Articles</a>
+    </nav>
+ <section id="articles">
+        <h2>Featured Articles</h2>
+        <div class="article-card" onclick="featureArticle(0)">
+            <h3>The Art of Space Baiting</h3>
+            <p>Learn how to attract cosmic fish with holographic lures.</p>
+        </div>
+        <div class="article-card" onclick="featureArticle(1)">
+            <h3>Top 10 Space Fishing Spots</h3>
+            <p>From asteroid belts to black hole edges.</p>
+        </div>
+        <div id="featured-article">
+            <h3>Select an article to feature</h3>
+            <p>Details will appear here.</p>
+        </div>
+    </section>
+
+    <!-- Bubbles background -->
+      <div class="bubbles"></div>
+      <footer>
+          <p>keytechcorps&copy</p>
+      </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
