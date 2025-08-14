@@ -29,8 +29,8 @@ body {
         }
 
           .glow {
-    font-size: 70px;
-    color: #a215c6;
+    font-size: 50px;
+    color: #00ffff;;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -44,15 +44,15 @@ body {
             text-shadow: 0 0 10px #00ffff;
         }
         header h3 {
-            color: #fa3b22;
+            color: #22fa80;
         }
     
         header p {
-          color: #c49806;
+          color: #54fd8f;
         }
 
         nav {
-            background-color: #035455;
+            background-color: #096e70;
             padding: 10px;
             text-align: center;
         }
@@ -65,7 +65,7 @@ body {
         }
 
         nav a:hover {
-    color: #b346ce;
+    color: #54fd8f;
         }
 
         .front-page{
@@ -183,6 +183,6 @@ body {
       width: 100%;
       background-color: #030423;
       text-align: center;
-      color: white;
+      color: #54fd8f;
       font-family: Arial, sans-serif;
     }
