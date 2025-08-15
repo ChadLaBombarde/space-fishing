@@ -40,7 +40,7 @@
         bubble.style.width = `${Math.random() * 15 + 5}px`;
         bubble.style.height = bubble.style.width;
         bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
-        bubble.style.animationDelay = `${Math.random() * 5}s`;
+        bubble.style.animationDelay = `${Math.random() * 3}s`;
         bubblesContainer.appendChild(bubble);
       }
     }
