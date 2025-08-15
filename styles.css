@@ -93,6 +93,24 @@ body {
             justify-content: center;
             align-items: center;
          }
+
+         .tournament-pic{
+            border-radius: 15px;
+            width: 50vw;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+         }
+         .tournament-pic-position{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+         }
       
 
         section {
