@@ -81,6 +81,8 @@ body {
         }
          .pic1{
             border-radius: 8px;
+            width: 60vw;
+            height: auto;
          }
         .pic-pos1{
             display: flex;
