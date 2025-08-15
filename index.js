@@ -33,6 +33,8 @@
 // Generate random bubbles
     function createBubbles() {
       const bubblesContainer = document.querySelector('.bubbles');
+      if (bubblesContainer.children.length > 0) {
+    return; }
       for (let i = 0; i < 70; i++) {
         const bubble = document.createElement('div');
         bubble.classList.add('bubble');
@@ -44,4 +46,5 @@
         bubblesContainer.appendChild(bubble);
       }
     }
-    window.onload = createBubbles;
+    // Run only once on page load
+document.addEventListener('DOMContentLoaded', createBubbles, { once: true });
