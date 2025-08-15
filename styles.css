@@ -11,10 +11,10 @@ body {
        
 
         header {
-            background-color: #035455;
+            background-color: transparent;
             padding: 20px;
             text-align: center;
-            border-bottom: 2px solid #00ffff; /* Neon cyan border */
+           
         }
 
           .glow {
@@ -44,9 +44,11 @@ body {
         }
 
         nav {
-            background-color: #096e70;
+            background-color: transparent;
             padding: 10px;
             text-align: center;
+            border-style: solid;
+            border-color: hsla(162, 41%, 41%, 0.258);
         }
 
         nav a {
