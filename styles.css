@@ -17,14 +17,27 @@ body {
            
         }
 
-          .glow {
+     .glow {
     font-size: 40px;
-    color: #00ffff;;
+    color: #00ffff;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
     animation: glow 1s ease-in-out infinite alternate;
-  }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+}
+@-webkit-keyframes glow {
+    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+}
+@-moz-keyframes glow {
+    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
+    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+}
 
         header h1 {
             margin: 0;
@@ -44,11 +57,11 @@ body {
         }
 
         nav {
-            background-color: transparent;
+            background-color: hsla(162, 35%, 44%, 0.289);
             padding: 10px;
             text-align: center;
             border-style: solid;
-            border-color: hsla(162, 41%, 41%, 0.258);
+            border-color: hsla(162, 35%, 44%, 0.289);
         }
 
         nav a {
@@ -219,11 +232,11 @@ body {
 
         /* Animated bubbles background */
    .bubbles {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Ensure container spans viewport height */
+  height: 100%; /* Ensure container spans viewport height */
   overflow: hidden;
   pointer-events: none; /* Prevent bubbles from interfering with clicks */
   z-index: -1;
@@ -232,16 +245,18 @@ body {
     .bubble {
       position: absolute;
       background: transparent;
-      border: 2px;
+      border-width: 2px;
       border-style: solid;
       border-color: rgb(104, 180, 154);
       bottom: 100px;
       width: 10px;
       height: 10px;
-      
       border-radius: 50%;
       animation: rise linear infinite;
+      -webkit-animation: rise linear infinite; /* Safari compatibility */
+      will-change: transform, opacity; /* Optimize animation performance */
     }
+      
 
     @keyframes rise {
       0% { -webkit-transform: translateY(0); opacity: 1; }

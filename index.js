@@ -1,12 +1,5 @@
 // Function to show/hide tournament details
-        function showDetails(id) {
-            const element = document.getElementById(id);
-            if (element.style.display === 'none') {
-                element.style.display = 'block';
-            } else {
-                element.style.display = 'none';
-            }
-        }
+      
 
         // Sample articles data
         const articles = [
@@ -23,27 +16,41 @@
         ];
 
         // Function to feature an article
-        function featureArticle(index) {
-            const featured = document.getElementById('featured-article');
-            featured.innerHTML = `
-                <h3>${articles[index].title}</h3>
-                <p>${articles[index].content}</p>
-                <img src="${articles[index].image}" alt="${articles[index].title}" style="max-width: 100%; height: auto;">
-            `;
-        }
 
+function featureArticle(index) {
+    const featured = document.getElementById('featured-article');
+    if (!articles || !articles[index]) {
+        console.error("Articles array or index is undefined");
+        featured.innerHTML = "<h3>Error</h3><p>Article not found.</p>";
+        return;
+    }
+    featured.innerHTML = `
+        <h3>${articles[index].title}</h3>
+        <p>${articles[index].content}</p>
+        <img src="${articles[index].image}" alt="${articles[index].title}" style="max-width: 100%; height: auto;">
+    `;
+}
         
 // Generate random bubbles
    function createBubbles() {
     const bubblesContainer = document.querySelector('.bubbles');
-    for (let i = 0; i < 50; i++) {
+    const bubbleCount = window.innerWidth < 768 ? 20 : 50; // Reduce bubbles on mobile for performance
+    for (let i = 0; i < bubbleCount; i++) {
         const bubble = document.createElement('div');
         bubble.classList.add('bubble');
         bubble.style.left = `${Math.random() * 100}%`;
         bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
-        bubble.style.width = `${Math.random() * 20 + 5}px`;
+        bubble.style.animationDelay = `${Math.random() * 2}s`; // Add slight delay for staggered effect
+        bubble.style.width = `${Math.random() * 15 + 5}px`; // Smaller max size for performance
         bubble.style.height = bubble.style.width;
         bubblesContainer.appendChild(bubble);
     }
 }
-window.onload = createBubbles;
+
+window.onload = () => {
+    try {
+        createBubbles();
+    } catch (e) {
+        console.error("Error creating bubbles:", e);
+    }
+};
