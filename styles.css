@@ -227,7 +227,8 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 2rem;
+           
+           
         }
         .story-pic1{
             display: flex;
@@ -235,6 +236,19 @@ body {
             justify-content: center;
             align-items: center;
             margin: 2rem;
+            width: 60vw;
+            height: auto;
+           
+        }
+
+        .story{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem;
+            width: 60vw;
+            height: auto;
         }
 
         /* Responsive Design */
