@@ -31,26 +31,3 @@ function featureArticle(index) {
     `;
 }
         
-// Generate random bubbles
-   function createBubbles() {
-    const bubblesContainer = document.querySelector('.bubbles');
-    const bubbleCount = window.innerWidth < 768 ? 20 : 50; // Reduce bubbles on mobile for performance
-    for (let i = 0; i < bubbleCount; i++) {
-        const bubble = document.createElement('div');
-        bubble.classList.add('bubble');
-        bubble.style.left = `${Math.random() * 100}%`;
-        bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
-        bubble.style.animationDelay = `${Math.random() * 2}s`; // Add slight delay for staggered effect
-        bubble.style.width = `${Math.random() * 15 + 5}px`; // Smaller max size for performance
-        bubble.style.height = bubble.style.width;
-        bubblesContainer.appendChild(bubble);
-    }
-}
-
-window.onload = () => {
-    try {
-        createBubbles();
-    } catch (e) {
-        console.error("Error creating bubbles:", e);
-    }
-};
