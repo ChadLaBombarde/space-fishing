@@ -87,7 +87,7 @@ body {
         /* FRONT PAGE PIC */
 
          .pic1{
-            border-radius: 5%;
+            border-radius: 5px;
             width: 80vw;
             height: auto;
          }
@@ -100,7 +100,7 @@ body {
         }
 
         .mick3{
-            border-radius: 5%;
+            border-radius: 5px;
             width: 50vw;
             height: auto;
             display: flex;
@@ -112,7 +112,7 @@ body {
          }
 
          .tournament-pic{
-            border-radius: 5%;
+            border-radius: 5px;
             width: 50vw;
             height: auto;
             display: flex;
@@ -134,6 +134,10 @@ body {
             padding: 40px 20px;
             max-width: 1200px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         #home {
@@ -159,6 +163,11 @@ body {
             border-radius: 10px;
             padding: 20px;
             margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            width: 70vw;
         }
 
         .tournament-card, .article-card {
@@ -169,6 +178,11 @@ body {
             margin: 10px 0;
             cursor: pointer;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            width: 50vw;
         }
 
         .tournament-card:hover, .article-card:hover {
@@ -217,7 +231,7 @@ body {
         .article-pic{
             width: 80vw;
             height: auto;
-            
+            border-radius: 5px;
             margin-top: 2rem;
             margin-bottom: 2rem;
         }  
@@ -227,6 +241,7 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            color: #54fd8f;
            
            
         }
@@ -238,6 +253,7 @@ body {
             margin: 2rem;
             width: 80vw;
             height: auto;
+            border-radius: 5px;
            
         }
 
