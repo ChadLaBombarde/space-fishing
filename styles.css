@@ -14,61 +14,16 @@ body {
             background-color: transparent;
             padding: 20px;
             text-align: center;
-           
-        }
-
-     .glow {
-    font-size: 40px;
-    color: #e15605;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-
- .glow2{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    color:  #e15605;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
- .glow3{
-    font-size: 20px;
-    font-weight: bold;
-    color: #f55607;
-    text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from { text-shadow: 0 0 10px #dbf4a6, 0 0 20px #dbf4a6; }
-    to { text-shadow: 0 0 20px #dbf4a6, 0 0 30px #dbf4a6; }
-}
-@-webkit-keyframes glow {
-    from { text-shadow: 0 0 10px #dbf4a6, 0 0 20px #dbf4a6; }
-    to { text-shadow: 0 0 20px #dbf4a6, 0 0 30px #dbf4a6; }
-}
-@-moz-keyframes glow {
-    from { text-shadow: 0 0 10px #dbf4a6, 0 0 20px #dbf4a6; }
-    to { text-shadow: 0 0 20px #dbf4a6, 0 0 30px #dbf4a6; }
-}
-
-.header{
-    background-image: url("MICKBANNER.png");
+           background-image: url("MICKBANNER.png");
      background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   margin: 0;
-}
+        }
+
+   
+
        
 
         header h1 {
@@ -78,7 +33,7 @@ body {
             text-shadow: 0 0 10px #00ffff;
         }
         header h2 {
-            color: #ec520a;
+            color: #f38856;
         }
     
         header p {
@@ -352,52 +307,6 @@ body {
     }
 
 
-
-        /* Animated bubbles background */
-   .bubbles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Ensure container spans viewport height */
-  overflow: hidden;
-  pointer-events: none; /* Prevent bubbles from interfering with clicks */
-  z-index: -1;
-}
-
-    .bubble {
-      position: absolute;
-      background: transparent;
-      border-width: 2px;
-      border-style: solid;
-      border-color: rgb(104, 180, 154);
-      bottom: 100px;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      animation: rise linear infinite;
-      -webkit-animation: rise linear infinite; /* Safari compatibility */
-      will-change: transform, opacity; /* Optimize animation performance */
-    }
-      
-
-    @keyframes rise {
-      0% { -webkit-transform: translateY(0); opacity: 1; }
-      100% { -webkit-transform: translateY(-100vh); opacity: 0.3; }
-    }
-
-    @keyframes glow {
-    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
-    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
-}
-@-webkit-keyframes glow {
-    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
-    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
-}
-@-moz-keyframes glow {
-    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
-    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
-}
 
    
     footer {
