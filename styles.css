@@ -352,6 +352,7 @@ body {
             align-items: center;
             justify-content: center;
             color: #54fd8f;
+            overflow: hidden;
             
         }
 
