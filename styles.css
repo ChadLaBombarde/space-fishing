@@ -19,7 +19,29 @@ body {
 
      .glow {
     font-size: 40px;
-    color: #f6c386;
+    color: #e15605;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+
+ .glow2{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:  #e15605;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+ .glow3{
+    font-size: 20px;
+    font-weight: bold;
+    color: #f55607;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;
@@ -27,21 +49,21 @@ body {
 }
 
 @keyframes glow {
-    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
-    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+    from { text-shadow: 0 0 10px #dbf4a6, 0 0 20px #dbf4a6; }
+    to { text-shadow: 0 0 20px #dbf4a6, 0 0 30px #dbf4a6; }
 }
 @-webkit-keyframes glow {
-    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
-    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+    from { text-shadow: 0 0 10px #dbf4a6, 0 0 20px #dbf4a6; }
+    to { text-shadow: 0 0 20px #dbf4a6, 0 0 30px #dbf4a6; }
 }
 @-moz-keyframes glow {
-    from { text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; }
-    to { text-shadow: 0 0 20px #00ffff, 0 0 30px #00ffff; }
+    from { text-shadow: 0 0 10px #dbf4a6, 0 0 20px #dbf4a6; }
+    to { text-shadow: 0 0 20px #dbf4a6, 0 0 30px #dbf4a6; }
 }
 
 .header{
-    background-image: url("");
-     background-position: center;
+    background-image: url("MICKBANNER.png");
+     background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -55,8 +77,8 @@ body {
             color: #00ffff; /* Neon cyan */
             text-shadow: 0 0 10px #00ffff;
         }
-        header h3 {
-            color: #f6c386;
+        header h2 {
+            color: #ec520a;
         }
     
         header p {
@@ -92,6 +114,9 @@ body {
     color: #f6c386;
         }
 
+
+                      /* FRONT PAGE and PICs */
+
         .front-page{
             display: flex;
             flex-direction: column;
@@ -101,7 +126,6 @@ body {
 
         }
 
-        /* FRONT PAGE PIC */
 
          .pic1{
             border-radius: 5px;
@@ -115,7 +139,7 @@ body {
             align-items: center;
             
         }
-
+        
         .mick3{
             border-radius: 5px;
             width: 50vw;
@@ -126,7 +150,11 @@ body {
             align-items: center;
             
             
-         }
+        }
+        
+                        /*TOURNAMENT AND SCORING RULES*/
+
+
 
          .tournament-pic{
             border-radius: 5px;
@@ -166,7 +194,6 @@ body {
             text-shadow: 0 0 15px #faf6b3;
         }
           
-        /*SCORING RULES*/
         .rules{
             display: flex;
             flex-direction: column;
@@ -184,7 +211,7 @@ body {
             flex-direction: column;
             justify-self: center;
             align-items: center;
-            width: 70vw;
+            width: 80vw;
         }
 
         .tournament-card, .article-card {
@@ -236,7 +263,7 @@ body {
             color: #00ffff;
         }
 
-            /* ARTICLE PAGE PIC POSITION */
+                      /* ARTICLE PAGE PIC POSITION */
 
 
         .article-pic-position{
@@ -269,6 +296,10 @@ body {
            
            
         }
+
+                                    /*STORIES*/
+
+
         .story-pic1{
             display: flex;
             flex-direction: column;
@@ -307,6 +338,20 @@ body {
                 margin: 10px 0;
             }
         }
+
+
+
+
+        /*FISHING GEAR STYLES*/
+    .gear{
+         display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #54fd8f;
+    }
+
+
 
         /* Animated bubbles background */
    .bubbles {
