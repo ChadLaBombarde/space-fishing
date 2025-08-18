@@ -38,4 +38,31 @@ function featureArticle(index) {
         <img src="${articles[index].image}" alt="${articles[index].title}" style="max-width: 100%; height: auto;">
     `;
 }
+
+//GLYPH FUNCTION
         
+const input = document.getElementById('glyphInput');
+        const display = document.getElementById('glyphDisplay');
+
+        input.addEventListener('input', (e) => {
+            // Convert to uppercase and filter invalid characters
+            let value = e.target.value.toUpperCase().replace(/[^0-9A-F]/g, '');
+            e.target.value = value; // Update input to reflect filtered value
+            display.textContent = value;
+        });
+
+        // Prevent pinch zoom and double-tap zoom on mobile
+        document.addEventListener('touchstart', (e) => {
+            if (e.touches.length > 1) {
+                e.preventDefault();
+            }
+        }, { passive: false });
+
+        let lastTouchEnd = 0;
+        document.addEventListener('touchend', (e) => {
+            const now = (new Date()).getTime();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, false);
