@@ -321,6 +321,16 @@ body {
 
     /*GLYPHS*/
 
+    .glyph-pic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40vw;
+        height: auto;
+        border-radius: 5px;
+    }
+
     @font-face {
             font-family: 'NMSGlyphs';
             src: url('https://static.wikitide.net/nmswiki/9/97/NMS-Glyphs-Mono.ttf') format('truetype');
