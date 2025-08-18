@@ -326,7 +326,7 @@ body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 40vw;
+        width: 60vw;
         height: auto;
         border-radius: 5px;
     }
@@ -334,7 +334,7 @@ body {
     @font-face {
             font-family: 'NMSGlyphs';
             src: url('https://static.wikitide.net/nmswiki/9/97/NMS-Glyphs-Mono.ttf') format('truetype');
-            font-weight: normal;
+            font-weight: bold;
             font-style: normal;
         }
 
@@ -397,9 +397,5 @@ body {
                 font-size: 1em;
             }
 
-            .glyph-display {
-                font-size: 2em;
-                letter-spacing: 5px;
-                padding: 10px;
-            }
+          
         }
