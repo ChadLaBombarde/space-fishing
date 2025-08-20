@@ -341,10 +341,11 @@ body {
         .body2 {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0px;
             background-color: #035455;
             margin-top: 10px;
-           
+            overflow-x: hidden;
             width: 100vw;
             height: auto;
             display: flex;
