@@ -343,7 +343,7 @@ body {
             text-align: center;
             padding: 20px;
             background-color: #035455;
-            
+            margin-top: 10px;
            
             width: 100vw;
             height: auto;
@@ -352,7 +352,7 @@ body {
             align-items: center;
             justify-content: center;
             color: #54fd8f;
-            overflow: hidden;
+            
             
         }
 
