@@ -400,3 +400,77 @@ body {
 
           
         }
+
+
+        /*  FISH TRACKER STYLES*/
+        .container {
+            max-width: 75vw;
+            height: auto;
+            margin: 0 auto;
+            background: rgba(0, 31, 63, 0.8); /* Semi-transparent blue holographic panel */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 149, 0, 0.5);
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input, select, button {
+            padding: 10px;
+            border: 1px solid #ff9500;
+            background: #001f3f;
+            color: #ffffff;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        button {
+            background: #ff9500;
+            cursor: pointer;
+            border: none;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #ffb733;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ff9500;
+        }
+
+        th {
+            background: #001f3f;
+        }
+
+        tfoot td {
+            font-weight: bold;
+            background: #001f3f;
+        }
+
+        /* Holographic effect */
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            border: 2px solid #ff9500;
+            border-radius: 15px;
+            opacity: 0.3;
+            pointer-events: none;
+        }
