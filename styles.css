@@ -379,8 +379,9 @@ body {
             border: 2px solid #ccc;
             border-radius: 10px;
             min-height: 60px;
-            width: 90%;
-            max-width: 400px;
+            width: 45vw;
+            height: auto;
+           
             word-break: break-all;
             box-sizing: border-box;
         }
@@ -404,7 +405,7 @@ body {
 
         /*  FISH TRACKER STYLES*/
         .container {
-            max-width: 75vw;
+           width: 90vw;
             height: auto;
             margin: 0 auto;
             background: rgba(0, 31, 63, 0.8); /* Semi-transparent blue holographic panel */
