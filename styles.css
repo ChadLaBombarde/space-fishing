@@ -14,12 +14,12 @@ body {
             background-color: transparent;
             padding: 20px;
             text-align: center;
-           background-image: url("MICKBANNER.png");
-     background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  margin: 0;
+            background-image: url("MICKBANNER.png");
+            background-position: bottom;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            margin: 0;
         }
 
    
